@@ -1,9 +1,9 @@
 node {  
     stage('Build') { 
        
-        sh "/opt/maven/bin/mvn -f /var/lib/jenkins/workspace/petclinic-app@script clean compile"
+        sh "/opt/maven/bin/mvn -f /var/lib/jenkins/workspace/PetClinic@script clean compile"
     }
     stage('Test') { 
-        sh "/opt/maven/bin/mvn -f /var/lib/jenkins/workspace/petclinic-app@script clean test"
+        sh "/opt/maven/bin/mvn -f /var/lib/jenkins/workspace/PetClinic@script clean test"
     }
 }
