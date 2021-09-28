@@ -13,5 +13,12 @@ pipeline {
                 }
             }
         }
+        stage('Build') {
+            steps {
+                script {
+                    maven("compile")
+                }
+            }
+        }
     }
 }
