@@ -20,5 +20,12 @@ pipeline {
                 }
             }
         }
+        stage('Test') {
+            steps {
+                script {
+                    maven("test")
+                }
+            }
+        }
     }
 }
