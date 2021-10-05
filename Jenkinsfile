@@ -1,4 +1,5 @@
-@Library("Shared-Library") _
+@Library("Shared-Library")_
+import com.app.MavenUtil
 
 pipeline {
     agent any
@@ -16,21 +17,21 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    maven("compile")
+                    utils.mvn 'compile'
                 }
             }
         }
         stage('Test') {
             steps {
                 script {
-                    maven("test")
+                    utils.mvn 'test'
                 }
             }
         }
         stage('Package') {
             steps {
                 script {
-                    maven("clean package")
+                    utils.mvn 'clean package'
                 }
             }
         }
