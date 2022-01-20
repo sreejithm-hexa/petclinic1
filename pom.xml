@@ -14,12 +14,12 @@
   </parent>
   <name>petclinic</name>
 
-   <distributionManagement>
+   <!--distributionManagement>
     <repository>
       <id>petclinic</id>
       <url>http://3.142.104.168:8082/artifactory/</url>
     </repository>
-  </distributionManagement>
+  </distributionManagement-->
 
   <properties>
 
