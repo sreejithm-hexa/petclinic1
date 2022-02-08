@@ -29,7 +29,7 @@ def utils = new MavenUtil(this)
         }*/
         stage('liquibase Test') {
             steps {               
-                    sh '/opt/liquibase/liquibase --version'             
+                    sh 'liquibase --version'             
             }
         }
     }
