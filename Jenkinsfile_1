@@ -32,7 +32,7 @@ pipeline {
                     sh '/etc/liquibase/liquibase --version'             
             }
         }
-        stage('liquibase Test') {
+        stage('liquibase status') {
             steps {               
                     sh '/etc/liquibase/liquibase status'             
             }
