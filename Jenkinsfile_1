@@ -29,7 +29,7 @@ pipeline {
         }*/
         stage('liquibase Test') {
             steps {               
-                    sh 'liquibase --version'             
+                    sh '/etc/liquibase/liquibase --version'             
             }
         }
     }
