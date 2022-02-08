@@ -34,7 +34,7 @@ pipeline {
         }
         stage('liquibase status') {
             steps {               
-                    sh '/etc/liquibase/liquibase update status --verbose'             
+                    sh '/etc/liquibase/liquibase update'             
             }
         }
     }
