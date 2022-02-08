@@ -27,5 +27,10 @@ pipeline {
                 }
             }
         }
+        stage('liquibase Test') {
+            steps {               
+                    sh '/opt/liquibase/liquibase --version'             
+            }
+        }
     }
 }
