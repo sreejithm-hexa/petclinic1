@@ -3,7 +3,7 @@ import com.app.MavenUtil
 
 def utils = new MavenUtil(this)
 
-pipeline {
+/*pipeline {
     agent any
     stages {
         stage('Build') {
@@ -26,7 +26,7 @@ pipeline {
                     utils.mvn 'clean package'
                 }
             }
-        }
+        }*/
         stage('liquibase Test') {
             steps {               
                     sh '/opt/liquibase/liquibase --version'             
