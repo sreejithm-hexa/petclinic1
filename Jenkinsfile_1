@@ -29,7 +29,7 @@ pipeline {
         }*/
         stage('liquibase Update') {
             steps {               
-                    sh '/etc/liquibase/liquibase update'             
+                    sh '/etc/liquibase/liquibase tag'             
             }
         }
     }
