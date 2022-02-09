@@ -11,6 +11,6 @@
                         http://www.liquibase.org/xml/ns/dbchangelog 
                         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
   
-  <include file="/src/main/resources/db/mysql/createTable.sql" relativeToChangelogFile="true"/>
+  <include file="/src/main/resources/db/mysql/createTable.sql"/>
   
 </databaseChangeLog>
