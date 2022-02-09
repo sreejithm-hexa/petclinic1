@@ -2,4 +2,4 @@
 
 --changeset author:Sreejith splitStatements:true endDelimiter:;
 
-drop table vets;
+drop table visits;
