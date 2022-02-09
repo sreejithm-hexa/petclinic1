@@ -1,3 +1,6 @@
+--liquibase formatted sql
+
+--changeset author:Sreejith splitStatements:true endDelimiter:;
 CREATE TABLE IF NOT EXISTS vets (
   id INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(30),
