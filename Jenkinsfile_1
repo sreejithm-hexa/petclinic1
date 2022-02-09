@@ -27,12 +27,7 @@ pipeline {
                 }
             }
         }*/
-        stage('DB Update') {
-            steps {               
-                    sh '/etc/liquibase/liquibase --version'             
-            }
-        }
-        stage('liquibase status') {
+        stage('liquibase Update') {
             steps {               
                     sh '/etc/liquibase/liquibase update'             
             }
