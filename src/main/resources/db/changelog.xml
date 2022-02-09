@@ -11,6 +11,6 @@
                         http://www.liquibase.org/xml/ns/dbchangelog 
                         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
   
-<includeAll path="/src/main/resources/db/mysql/"/>
+	<includeAll path="/src/main/resources/db/mysql/"/>
   
 </databaseChangeLog>
