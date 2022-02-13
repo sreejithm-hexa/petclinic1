@@ -34,7 +34,7 @@ pipeline {
         }
         stage('liquibase snap') {
             steps {               
-                    sh '/etc/liquibase/liquibase snapshot --snapshotFormat=json'             
+                    sh '/etc/liquibase/liquibase snapshot --snapshotFormat=yaml --outputFile=myschemaSnapshot.yaml'             
             }
         }
     }
