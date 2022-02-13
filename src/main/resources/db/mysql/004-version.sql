@@ -21,6 +21,6 @@ CREATE TABLE customer (
     Address varchar(255),
     City varchar(255)
 );
---rollback
+--rollback tag:roll
 
 drop table persons;
