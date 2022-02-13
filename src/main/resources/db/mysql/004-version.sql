@@ -9,3 +9,15 @@ CREATE TABLE Persons (
     Address varchar(255),
     City varchar(255)
 );
+
+--changeset author:vyshak splitStatements:true endDelimiter:; context:dev
+
+
+
+CREATE TABLE customer (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255)
+);
