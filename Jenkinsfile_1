@@ -32,6 +32,12 @@ pipeline {
                     sh '/etc/liquibase/liquibase --contexts="test" update'             
             }
         }
+        stage('liquibase rollback') {
+            steps {               
+                    sh '/etc/liquibase/liquibase rollback'             
+            }
+        }
+        
         /*stage('liquibase snap') {
             steps {               
                     sh '/etc/liquibase/liquibase snapshot --snapshotFormat=yaml --outputFile=myschemaSnapshot.yaml'             
