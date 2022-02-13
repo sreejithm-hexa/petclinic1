@@ -34,7 +34,7 @@ pipeline {
         }
         stage('liquibase rollback') {
             steps {               
-                    sh '/etc/liquibase/liquibase rollback'             
+                    sh '/etc/liquibase/liquibase rollback --tag=roll'             
             }
         }
         
