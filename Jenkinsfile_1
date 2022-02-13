@@ -32,7 +32,7 @@ pipeline {
                     sh '/etc/liquibase/liquibase update'             
             }
         }
-        stage('liquibase Update') {
+        stage('liquibase snap') {
             steps {               
                     sh '/etc/liquibase/liquibase snapshot --snapshotFormat=json'             
             }
