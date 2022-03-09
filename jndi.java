@@ -19,7 +19,7 @@ public class ManagedPropertyConfig extends PropertyConfig {
 	private static final Logger LOGGER = LoggerFactory.getLogger(ManagedPropertyConfig.class);
 
 	private static final String JNDI_CONTEXT_ENVIRONMENT = "java:comp/env1";
-	private static final String JNDI_DOC_IN_FOLDER_JNDI_PROPERTY_NAME = "ws-telebib/cbtg/gfs/doc/in";
+	private static final String JNDI_DOC_IN_FOLDER_JNDI_PROPERTY_NAME = "ws-telebib/cbtg/gfs/doc/in2";
 	private static final String JNDI_DOC_TIMEOUT_FOLDER_JNDI_PROPERTY_NAME = "ws-telebib/cbtg/gfs/doc/timeout";
 	private static final String JNDI_FTP_IN_FOLDER_JNDI_PROPERTY_NAME = "ws-telebib/cbtg/gfs/ftp/in";
 	private static final String API_KEY_JNDI = "ws-telebib/jwt/apikey";
